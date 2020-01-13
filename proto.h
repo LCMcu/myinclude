@@ -70,10 +70,9 @@ typedef struct device_data
 /*多个设备数据存储*/
 typedef struct device_data_buf
 {
-    int device_num;
+    int expect_num;           //期望提取的数据个数
+    int actual_num;           //实际个数
     DEVICE_DATA *device;
 }DEVICE_DATA_BUF;
 
 #endif
-
-
